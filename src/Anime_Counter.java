@@ -9,7 +9,7 @@ public class Anime_Counter {
 	private static String APIKey = System.getenv("TWITTER_ACCESS_TOKEN");
 	private static String APISecretKey = System.getenv("TWITTER_ACCESS_TOKEN_SECRET");
 	public static void main(String[] args) {
-		String tweet = "ナターリアは神";
+		String tweet = "実はAPIからツイートしてる";
 		Twitter twitter = new TwitterFactory().getInstance();
 		twitter.setOAuthConsumer(consumerKey, consumerSecretKey);
 		twitter.setOAuthAccessToken(new AccessToken(APIKey,APISecretKey));
